@@ -1,0 +1,14 @@
+{
+    "default_name": "comic_name",
+    "page_count": 22,
+    "intro": 4,
+    "trades": [ 0, 1, 2 ],
+    "issues": [
+        0,
+        "issue_name"
+    ],
+    "special_page_counts": {
+        "issue_name": 25
+    },
+    "buffer_pages": [ 0, "issue_name" ]
+}
