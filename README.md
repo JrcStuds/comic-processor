@@ -16,3 +16,8 @@ This tool is used to convert a collection of cbz files that make up a trade and 
     - "special_page_counts" is for when an issue has a non-standard number of pages, to specify this deviation, the key-value pair would be the name of the issue (as per the "issues" list, or by the integer value) and the number of pages (as an integer).
     - "buffer_pages" is a list of the issues with a buffer page between the cover image and the first page. These issues are specified with their integer or string issue name.
 3. Run main.py, and the resulting cbz files will be generated into the output directory.
+
+
+## Issue Renamer
+
+Built for comics downloaded from Mihon, specifically from BatCave via Keiyoushi
