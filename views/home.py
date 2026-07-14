@@ -4,19 +4,22 @@ import flet as ft
 
 class HomeView(ft.View):
     def __init__(self, page: ft.Page):
-        super().__init__(
-            route="/",
+
+        self.content = ft.Column(
             controls=[
-                ft.Text("This is the app"),
+                ft.Text("This is the Home View"),
                 ft.Button(
-                    content="button",
-                    on_click=self.go_to_issue_renamer
+                    content="Go to Issue Renamer",
+                    on_click=self.goto_issue_renamer
                 )
-            ],
-            vertical_alignment=ft.MainAxisAlignment.CENTER,
-            horizontal_alignment=ft.CrossAxisAlignment.CENTER
+            ]
         )
 
+        super().__init__(
+            route="/",
+            controls=[ft.SafeArea(self.content)]
+        )
+    
 
-    async def go_to_issue_renamer(self):
+    async def goto_issue_renamer(self, e):
         await self.page.push_route("/issue-renamer")
